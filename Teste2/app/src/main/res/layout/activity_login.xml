@@ -33,50 +33,50 @@
             android:textStyle="bold" />
 
         <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="71dp"
-                android:hint="Email"
-                app:hintTextColor="@color/black"
-                app:helperTextTextColor="@color/red"
-                app:counterEnabled="true"
-                app:counterTextColor="@color/red"
-                app:endIconMode="clear_text"
-                app:endIconTint="@color/orange"
-                app:helperText="Required *"
-                app:startIconDrawable="@drawable/ic_baseline_email_24"
-                app:startIconTint="@color/orange"
-                >
+            android:id="@+id/til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="71dp"
+            android:hint="Email"
+            app:hintTextColor="@color/black"
+            app:helperTextTextColor="@color/orange"
+            app:counterEnabled="true"
+            app:counterTextColor="@color/orange"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/orange"
+            app:helperText="Required *"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            app:startIconTint="@color/orange"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tiet_email"
-                    android:textColor="@color/black"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                android:id="@+id/tiet_email"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/til_pass"
+            android:id="@+id/til_pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="48dp"
-                android:hint="Password"
-                app:hintTextColor="@color/black"
-                app:helperTextTextColor="@color/red"
-                app:counterEnabled="true"
-                app:counterTextColor="@color/red"
-                app:endIconMode="password_toggle"
-                app:endIconTint="@color/orange"
-                app:helperText="Required *"
-                app:startIconDrawable="@drawable/ic_baseline_lock_24"
-                app:startIconTint="@color/orange"
-                >
+            android:hint="Password"
+            app:hintTextColor="@color/black"
+            app:helperTextTextColor="@color/orange"
+            app:counterEnabled="true"
+            app:counterTextColor="@color/orange"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/orange"
+            app:helperText="Required *"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            app:startIconTint="@color/orange"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/tiet_pass"
-                    android:textColor="@color/black"
+                android:id="@+id/tiet_pass"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:password="true" />

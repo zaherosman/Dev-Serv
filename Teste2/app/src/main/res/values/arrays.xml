@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sectors">
+        <item>Sector1</item>
+        <item>Sector2</item>
+        <item>Sector3</item>
+    </array>
+</resources>

@@ -3,6 +3,22 @@
     <style name="Base.Theme.Teste2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:colorAccent">@color/orange_dark</item>
+    </style>
+
+    <style name="CustomEditText" parent="Base.ThemeOverlay.Material3.TextInputEditText">
+        <item name="boxStrokeColor">@color/orange</item>
+        <item name="android:textColorHighlight">@color/orange</item>
+        <item name="placeholderTextColor">@color/orange</item>
+        <item name="counterTextColor">@color/orange</item>
+        <item name="hintTextColor">@color/orange</item>
+    </style>
+
+    <style name="CustomActionBar">
+        <item name="android:layout_marginTop">18dp</item>
     </style>
 
     <style name="Theme.Teste2" parent="Base.Theme.Teste2" />
