@@ -10,22 +10,41 @@ import android.widget.ListView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.example.teste2.databinding.ActivityListaServicoBinding
+import com.example.teste2.databinding.ActivityListaServicoClienteBinding
+import com.example.teste2.databinding.ActivityListaServicoEmpresaBinding
 
-class ListaServicoActivity : AppCompatActivity() {
+class ListaServicoEmpresaActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityListaServicoBinding
+    private lateinit var binding : ActivityListaServicoEmpresaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         window.navigationBarColor = 0xFFF87060.toInt()
 
-        binding = ActivityListaServicoBinding.inflate(layoutInflater)
+        binding = ActivityListaServicoEmpresaBinding.inflate(layoutInflater)
 
-        binding.listaServico.adapter = ListaServicoAdapter(
+        binding.btnMenu.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, MainEmpresaActivity::class.java).apply {
+            }
+            startActivity(intent)
+        })
+
+        binding.listaServico.adapter = ListaServicoEmpresaAdapter(
             arrayOf("TEST1","TEST2","TEST3")
         )
+
+        binding.listaServicoPrestado.adapter = ListaServicoEmpresaAdapter(
+            arrayOf("TEST1","TEST2","TEST3")
+        )
+
+        binding.listaServicoCadastrado.adapter = ListaServicoEmpresaAdapter(
+            arrayOf("TEST1","TEST2","TEST3")
+        )
+
         binding.listaServico.layoutManager = LinearLayoutManager(this)
+        binding.listaServicoPrestado.layoutManager = LinearLayoutManager(this)
+        binding.listaServicoCadastrado.layoutManager = LinearLayoutManager(this)
 
         binding.btnSair.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, LoginActivity::class.java).apply {
@@ -35,12 +54,6 @@ class ListaServicoActivity : AppCompatActivity() {
 
         binding.btnFiltrar.setOnClickListener(View.OnClickListener {
             val intent = Intent(this, FilterActivity::class.java).apply {
-            }
-            startActivity(intent)
-        })
-
-        binding.btnMenu.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
             }
             startActivity(intent)
         })

@@ -127,7 +127,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/btn_solicitar"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="47dp"

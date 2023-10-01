@@ -87,7 +87,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="28dp"
             android:backgroundTint="@color/orange"
             android:text="Login"
             app:cornerRadius="5dp" />
@@ -96,13 +96,25 @@
             android:id="@+id/btnCadastro"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="16dp"
             android:background="@android:color/transparent"
             android:text="Cadastro"
             android:textColor="@color/orange"
             app:cornerRadius="5dp"
             app:strokeColor="@color/orange"
-            app:strokeWidth="5dp" />
+            app:strokeWidth="10dp" />
+
+        <Button
+            android:id="@+id/btnPrestador"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:text="Tornar-se Prestador"
+            android:textColor="@color/orange"
+            app:cornerRadius="5dp"
+            app:strokeColor="@color/orange"
+            app:strokeWidth="10dp" />
 
     </LinearLayout>
 

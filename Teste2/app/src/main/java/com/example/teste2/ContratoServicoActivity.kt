@@ -1,11 +1,23 @@
 package com.example.teste2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import com.example.teste2.databinding.ActivityContratoServicoBinding
+import com.example.teste2.utils.ActivityNavigationClickListener
 
 class ContratoServicoActivity : AppCompatActivity() {
+
+    lateinit var binding : ActivityContratoServicoBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_contrato_servico)
+
+        binding = ActivityContratoServicoBinding.inflate(layoutInflater)
+
+        binding.btnSolicitarServico.setOnClickListener(ActivityNavigationClickListener(ProgressoServicoClienteActivity::class.java))
+
+        setContentView(binding.root)
     }
 }

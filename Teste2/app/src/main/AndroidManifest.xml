@@ -22,6 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CadastroEmpresaActivity" android:exported="true"/>
+        <activity android:name=".CadastroServicoActivity" android:exported="true"/>
+        <activity android:name=".ContratoServicoActivity" android:exported="true"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
@@ -46,14 +49,18 @@
         <activity
             android:name=".ProgressoServicoClienteActivity"
             android:exported="true" />
-        <activity
-            android:name=".ContratoServicoActivity"
-            android:exported="true" />
+        <activity android:name=".ProgressoServicoEmpresaActivity" android:exported="true" />
         <activity
             android:name=".ItemServicoActivity"
             android:exported="true" />
         <activity
             android:name=".ListaServicoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListaServicoClienteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListaServicoEmpresaActivity"
             android:exported="true" />
         <activity
             android:name=".PerfilActivity"
@@ -64,6 +71,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity android:name=".MainEmpresaActivity" android:exported="true"/>
     </application>
 
 </manifest>

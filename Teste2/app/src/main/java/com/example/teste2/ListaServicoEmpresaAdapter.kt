@@ -9,8 +9,8 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.teste2.databinding.ItemServicoBinding
 
-class ListaServicoAdapter (private val dataSet: Array<String>)
-    : RecyclerView.Adapter<ListaServicoAdapter.ViewHolder>() {
+class ListaServicoEmpresaAdapter (private val dataSet: Array<String>)
+    : RecyclerView.Adapter<ListaServicoEmpresaAdapter.ViewHolder>() {
 
     class ViewHolder(binding: ItemServicoBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -23,7 +23,7 @@ class ListaServicoAdapter (private val dataSet: Array<String>)
             txtDescricao = binding.txtDescricao
             txtAvaliacao = binding.txtAvaliacaoEstrelas
             txtTitulo.setOnClickListener(View.OnClickListener {
-                val intent = Intent(binding.root.context, ItemServicoActivity::class.java).apply {
+                val intent = Intent(binding.root.context, ProgressoServicoEmpresaActivity::class.java).apply {
                 }
                 startActivity(binding.root.context,intent,null)
             })

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AdminMainActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,6 +14,7 @@
 
         <ImageButton
             android:id="@+id/imgRetornarPrincipal"
+            android:tooltipText="Retornar"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -26,7 +27,7 @@
             android:layout_height="30dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Administrador"
+            android:text="Empresa Prestadora"
             android:textAlignment="center"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -43,9 +44,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="17dp"
-        android:layout_marginRight="17dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <View
             android:id="@+id/divider"
@@ -54,17 +54,17 @@
             android:background="?android:attr/listDivider" />
 
         <TextView
-            android:id="@+id/txt_cliente"
+            android:id="@+id/txt_servicos_prestados"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="11dp"
-            android:text="Clientes" />
+            android:text="Serviços" />
 
         <TextView
             android:id="@+id/textView22"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Editar Clientes"
+            android:text="Verificar Serviços Prestados"
             android:textSize="8sp" />
 
         <View
@@ -75,17 +75,17 @@
             android:background="?android:attr/listDivider" />
 
         <TextView
-            android:id="@+id/txt_empresa"
+            android:id="@+id/txt_cadastrar_servicos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="11dp"
-            android:text="Empresas Prestadores de Serviço" />
+            android:text="Cadastrar Serviços" />
 
         <TextView
             android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="Cadastrar Novos Serviços"
             android:textSize="8sp" />
 
         <View
@@ -96,17 +96,17 @@
             android:background="?android:attr/listDivider" />
 
         <TextView
-            android:id="@+id/txt_servico"
+            android:id="@+id/txt_perfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="11dp"
-            android:text="Serviço" />
+            android:text="Perfil" />
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="Verificar perfil"
             android:textSize="8sp" />
 
         <View
@@ -117,5 +117,4 @@
             android:background="?android:attr/listDivider" />
 
     </LinearLayout>
-
 </LinearLayout>

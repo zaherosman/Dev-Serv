@@ -156,26 +156,30 @@
             android:hint="Descrição"
             android:inputType="textMultiLine" />
 
-        <TextView
-            android:id="@+id/textView18"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="47dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginRight="47dp"
-            android:text="R$ 100,00"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="16dp"
+                android:hint="Valor"
+                android:text="R$100,00" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_aprovar"
+            android:id="@+id/btn_editar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="47dp"
             android:layout_marginTop="18dp"
             android:layout_marginRight="47dp"
             android:backgroundTint="@color/orange"
-            android:text="Aprovar"
+            android:text="Editar"
             app:cornerRadius="5dp" />
 
         <Button

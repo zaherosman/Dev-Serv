@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_titulo_valor_finalizado"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListaServicoActivity">
@@ -51,6 +52,25 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulo_servicos_finalizados"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Serviços Finalizados" />
+
+            <TextView
+                android:id="@+id/txt_valor_finalizado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="R$100" />
+        </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -58,6 +78,36 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/listaServico"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_titulo_servicos_prestados"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Serviços Prestados" />
+
+            <TextView
+                android:id="@+id/txt_valor_prestado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="R$100" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listaServicoPrestado"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </ScrollView>
