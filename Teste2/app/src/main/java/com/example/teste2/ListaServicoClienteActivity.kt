@@ -29,7 +29,7 @@ class ListaServicoClienteActivity : AppCompatActivity() {
         binding.listaServico.layoutManager = LinearLayoutManager(this)
 
         binding.btnMenu.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, MainEmpresaActivity::class.java).apply {
+            val intent = Intent(this, MainActivity::class.java).apply {
             }
             startActivity(intent)
         })

@@ -33,9 +33,10 @@
 
         <ImageView
             android:id="@+id/imgLogo"
-            android:layout_width="30dp"
+            android:layout_width="9dp"
             android:layout_height="30dp"
             android:layout_weight="1"
+            android:scaleType="fitCenter"
             tools:srcCompat="@drawable/group" />
 
     </LinearLayout>
