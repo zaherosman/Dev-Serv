@@ -1,13 +1,11 @@
 package com.example.teste2
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageButton
-import com.example.teste2.databinding.ActivityAdminListaServicosBinding
-import com.example.teste2.databinding.ActivityCadastroEmpresaBinding
 import com.example.teste2.databinding.ActivityCadastroServicoBinding
+import com.example.teste2.models.Servico
+import com.example.teste2.store.Data
+import java.lang.Double.parseDouble
 
 class CadastroServicoActivity : AppCompatActivity() {
 
@@ -17,6 +15,11 @@ class CadastroServicoActivity : AppCompatActivity() {
 
         binding = ActivityCadastroServicoBinding.inflate(layoutInflater)
 
+        val edtTitulo = binding.edtTitulo
+        val edtTipoServico = binding.edtTipoServico
+        val edtDescricao = binding.edtDescricao
+        val edtValor = binding.edtValor
+
         var btnVoltar = binding.imgRetornarPrincipal
         var btnCadastro = binding.btnCadastro
 
@@ -25,6 +28,20 @@ class CadastroServicoActivity : AppCompatActivity() {
         }
 
         btnCadastro.setOnClickListener{
+            Data.db
+                .collection("Service")
+                .add(
+                    Servico(
+                        "",
+                        edtTitulo.text.toString(),
+                        edtDescricao.text.toString(),
+                        Data.userData.id,
+                        edtTipoServico.text.toString(),
+                        0.0,
+                        parseDouble(edtValor.text.toString()),
+                        0
+                    )
+                )
             this.finish()
         }
 

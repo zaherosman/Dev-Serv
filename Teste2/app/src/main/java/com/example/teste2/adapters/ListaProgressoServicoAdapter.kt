@@ -1,4 +1,4 @@
-package com.example.teste2
+package com.example.teste2.adapters
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,9 +7,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.teste2.ProgressoServicoClienteActivity
 import com.example.teste2.databinding.ItemServicoBinding
+import com.example.teste2.models.ServiceStatusComplete
+import com.example.teste2.store.Data
 
-class ListaProgressoServicoAdapter (private val dataSet: Array<String>)
+class ListaProgressoServicoAdapter (private val dataSet: MutableList<ServiceStatusComplete>)
     : RecyclerView.Adapter<ListaProgressoServicoAdapter.ViewHolder>() {
 
     class ViewHolder(binding: ItemServicoBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -17,6 +20,7 @@ class ListaProgressoServicoAdapter (private val dataSet: Array<String>)
         val txtTitulo: TextView
         val txtDescricao: TextView
         val txtAvaliacao: TextView
+        lateinit var item: ServiceStatusComplete
 
         init {
             txtTitulo = binding.txtTitulo
@@ -25,6 +29,7 @@ class ListaProgressoServicoAdapter (private val dataSet: Array<String>)
             txtTitulo.setOnClickListener(View.OnClickListener {
                 val intent = Intent(binding.root.context, ProgressoServicoClienteActivity::class.java).apply {
                 }
+                Data.serviceStatus = item.serviceStatus
                 startActivity(binding.root.context,intent,null)
             })
         }
@@ -36,8 +41,9 @@ class ListaProgressoServicoAdapter (private val dataSet: Array<String>)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.txtTitulo.text = position.toString()
-        holder.txtDescricao.text = dataSet[position]
+        holder.txtTitulo.text = dataSet[position].service.title
+        holder.txtDescricao.text = dataSet[position].serviceStatus.statusNumber.toString() + "%"
+        holder.item = dataSet[position]
     }
 
     override fun getItemCount(): Int {

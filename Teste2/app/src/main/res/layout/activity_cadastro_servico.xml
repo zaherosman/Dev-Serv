@@ -56,6 +56,7 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_titulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Título" />
@@ -67,6 +68,7 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_tipo_servico"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Tipo do Serviço" />
@@ -78,6 +80,7 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_descricao"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="start"
@@ -90,6 +93,7 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_valor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Valor" />

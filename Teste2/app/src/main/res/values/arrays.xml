@@ -5,4 +5,9 @@
         <item>Sector2</item>
         <item>Sector3</item>
     </array>
+    <array name="serviceTypes">
+        <item>1-Desenvolvimento Básico</item>
+        <item>2-Desenvolvimento Profissional</item>
+        <item>3-Aplicação Personalizada</item>
+    </array>
 </resources>

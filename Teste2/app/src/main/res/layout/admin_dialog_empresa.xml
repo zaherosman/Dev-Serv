@@ -19,10 +19,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="22dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_empresa_nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nome" />
@@ -34,9 +35,10 @@
             android:layout_marginTop="22dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_empresa_setor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Sobrenome" />
+                android:hint="Setor" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -45,6 +47,19 @@
             android:layout_marginTop="22dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_empresa_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descrição" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_empresa_identifier"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="CPF/CNPJ" />
@@ -56,6 +71,7 @@
             android:layout_marginTop="22dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_empresa_nome_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nome de Usuário" />
@@ -63,7 +79,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnLogin2"
+            android:id="@+id/btn_admin_editar"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="48dp"

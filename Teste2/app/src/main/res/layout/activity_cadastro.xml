@@ -56,9 +56,10 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name" />
+                    android:hint="Nome" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -67,9 +68,10 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_sobrenome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Surname" />
+                    android:hint="Sobrenome" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -78,9 +80,10 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nome_usuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Username" />
+                    android:hint="Nome de usuário" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -89,6 +92,7 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="E-mail" />
@@ -100,19 +104,12 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_identifier"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="CPF/CNPJ" />
 
             </com.google.android.material.textfield.TextInputLayout>
-
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="22dp"
-                android:layout_weight="1"
-                android:entries="@array/sectors" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -120,6 +117,7 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_senha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Senha..."
@@ -133,6 +131,7 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_confirma_senha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Confirmar Senha..."

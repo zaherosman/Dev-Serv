@@ -69,8 +69,15 @@
                 android:text="Preço Mínimo"
                 android:textSize="12sp" />
 
+            <TextView
+                android:id="@+id/txt_financeiro_preco_minimo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="R$ 0.0" />
+
             <SeekBar
-                android:id="@+id/seekBar"
+                android:id="@+id/barra_preco_minimo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -85,8 +92,15 @@
                 android:text="Preço Máximo"
                 android:textSize="12sp" />
 
+            <TextView
+                android:id="@+id/txt_financeiro_preco_maximo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="R$ 0.0" />
+
             <SeekBar
-                android:id="@+id/seekBar2"
+                android:id="@+id/barra_preco_maximo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -102,27 +116,27 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_tipo_servico"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp">
 
                 <RadioButton
-                    android:id="@+id/radioOptA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Opt A" />
+                    android:text="Desenvolvimento Web" />
 
                 <RadioButton
                     android:id="@+id/radioOptB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Opt B" />
+                    android:text="Desenvolvimento Mobile Android" />
 
                 <RadioButton
                     android:id="@+id/radioOptC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Opt C" />
+                    android:text="Desenvolvimento Mobile iOS" />
 
             </RadioGroup>
 
@@ -135,6 +149,7 @@
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_average_rating"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp">
@@ -143,19 +158,31 @@
                     android:id="@+id/radioOptD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Opt D" />
+                    android:text="5 Estrelas" />
 
                 <RadioButton
                     android:id="@+id/radioOptE"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Opt E" />
+                    android:text="4 Estrelas" />
 
                 <RadioButton
                     android:id="@+id/radioOptF"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Opt F" />
+                    android:text="3 Estrelas" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2 Estrelas" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1 Estrelas" />
             </RadioGroup>
 
             <Button

@@ -1,4 +1,4 @@
-package com.example.teste2
+package com.example.teste2.adapters
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.teste2.ProgressoServicoEmpresaActivity
 import com.example.teste2.databinding.ItemServicoBinding
 
 class ListaServicoEmpresaAdapter (private val dataSet: Array<String>)
@@ -36,8 +37,8 @@ class ListaServicoEmpresaAdapter (private val dataSet: Array<String>)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.txtTitulo.text = position.toString()
-        holder.txtDescricao.text = dataSet[position]
+        holder.txtTitulo.text = dataSet[position]
+        holder.txtDescricao.text = position.toString()
     }
 
     override fun getItemCount(): Int {

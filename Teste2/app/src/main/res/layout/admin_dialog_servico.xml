@@ -1,79 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/txt_titulo_editar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Editar Serviço" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.google.android.material.textfield.TextInputLayout
+        <TextView
+            android:id="@+id/txt_titulo_editar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp">
+            android:text="Editar Serviço" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Título" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Tipo do Serviço" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:gravity="start"
-                android:hint="Descrição" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="22dp">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Valor" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="22dp">
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -81,22 +28,95 @@
                 android:layout_marginTop="22dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_admin_servico_titulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Status" />
+                    android:hint="Título" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_admin_servico_tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tipo do Serviço" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_admin_servico_descricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="start"
+                    android:hint="Descrição" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="22dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_admin_servico_valor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Valor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
             </com.google.android.material.textfield.TextInputLayout>
 
-        </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp">
 
-        <Button
-            android:id="@+id/btnLogin2"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginTop="48dp"
-            android:backgroundTint="@color/orange"
-            android:text="Editar"
-            app:cornerRadius="5dp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="22dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_admin_servico_acessos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Acessos" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="16dp"
+                android:numStars="5" />
+
+
+            <Button
+                android:id="@+id/btn_admin_editar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="48dp"
+                android:backgroundTint="@color/orange"
+                android:text="Editar"
+                app:cornerRadius="5dp" />
+        </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

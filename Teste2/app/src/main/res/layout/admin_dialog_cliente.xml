@@ -23,6 +23,7 @@
             android:layout_marginTop="22dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_cliente_nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nome" />
@@ -34,6 +35,7 @@
             android:layout_marginTop="22dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_cliente_sobrenome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Sobrenome" />
@@ -45,6 +47,7 @@
             android:layout_marginTop="22dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_cliente_identifier"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="CPF/CNPJ" />
@@ -56,6 +59,7 @@
             android:layout_marginTop="22dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_admin_nome_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nome de Usuário" />
@@ -63,7 +67,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnLogin2"
+            android:id="@+id/btn_admin_editar"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="48dp"

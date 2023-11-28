@@ -1,14 +1,12 @@
-package com.example.teste2
+package com.example.teste2.adapters
 
 import android.app.AlertDialog
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.teste2.R.layout
+import com.example.teste2.R
 import com.example.teste2.databinding.CustomDialogBinding
 import com.example.teste2.databinding.ItemServicoBinding
 
